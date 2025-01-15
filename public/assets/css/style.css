@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: "Hind Siliguri", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+table thead tr th{
+    font-weight: 600;
+}
+table tr td a{
+    text-decoration: none;
+    color: black;
+}
+table tr td a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+h2, h3, h4, h5, h6{
+    font-family: "Hind Siliguri", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+h3{
+    color: rgb(88, 88, 88);
+    font-style:italic;
+}
+.prdtImage{
+    width: 100%;
+    height: auto;
+}
+.breadcrumbs a, .breadcrumbs span{
+    text-decoration: none;
+    font-size: 16px ;
+    font-weight: 700;
+    color: rgb(161, 161, 161);
+}
+.breadcrumbs a:hover{
+    text-decoration: underline;
+    color: blue;
+}
