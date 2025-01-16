@@ -98,7 +98,15 @@ class ProductController extends Controller
         return view('edit', compact('products'));
     }
 
-    public function productUpdate(Request $request){
+    public function productUpdate(Request $request, $id){
+        $validated = $request->validate([
+            'slug' => "required|unique:products,product_id, $id",
+            'name' => 'required',
+            'description' => 'required',
+            'stock' => 'required',
+            'price' => 'required',
+        ]);
+
         $product = Product::findorfail($request->id);
 
         if($request->has('image') && File::exists(public_path('images/'.$product->image))){
